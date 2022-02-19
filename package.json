@@ -1,0 +1,53 @@
+{
+  "name": "langtons-ant",
+  "version": "1.0.0",
+  "description": "A simulation of the cellular automata Langton's Ant",
+  "main": "index.js",
+  "scripts": {
+    "create": "webpack",
+    "start": "webpack-dev-server --open --env.MODE=local",
+    "build": "webpack --mode production --env.MODE=dev",
+    "live": "webpack --mode production --env.MODE=live",
+    "test-build": "http-server .\\dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanSoup/langtons-ant.git"
+  },
+  "author": "Dan Soup (Daniel Thomas)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanSoup/langtons-ant/issues"
+  },
+  "homepage": "https://github.com/DanSoup/langtons-ant#readme",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "file-loader": "^6.2.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "sass": "^1.35.1",
+    "sass-loader": "^10.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^3.6.0",
+    "html-webpack-plugin": "^5.3.2",
+    "http-server": "^13.0.1",
+    "jest": "^26.6.3",
+    "style-loader": "^1.3.0",
+    "webpack": "^5.42.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
