@@ -16,7 +16,7 @@ const MainPage = (props) => {
         <Ant/>
       </Route>
       <Route path="/devlog">
-        Devlog
+        Devlog 2
       </Route>
       <Route path="*">
         404
