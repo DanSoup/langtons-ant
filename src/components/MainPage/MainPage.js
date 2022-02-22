@@ -1,6 +1,7 @@
 import React from 'react';
 import {Switch, Route, Link, useLocation} from 'react-router-dom';
 import Ant from '../Ant/Ant';
+import Devlog from '../Devlog/Devlog';
 
 const MainPage = (props) => {
 
@@ -16,7 +17,7 @@ const MainPage = (props) => {
         <Ant/>
       </Route>
       <Route path="/devlog">
-        Devlog 2
+        <Devlog/>
       </Route>
       <Route path="*">
         404
