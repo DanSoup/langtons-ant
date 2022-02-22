@@ -15,17 +15,19 @@ module.exports = (wpEnv) => {
   const modeVars = {
     local: {
       filename: 'index_bundle.js',
-      publicPath: '/'
+      publicPath: '/qwesd'
     },
     dev: {
       filename: 'index_bundle.js',
-      publicPath: '/'
+      publicPath: '/qwesd'
     },
     live: {
       filename: 'index_bundle.js',
       publicPath: `/${env.BS_CONFIG.BS_FOLDER}/${env.BS_CONFIG.BS_URL}`
     }
   }
+
+  console.log(modeVars[env.MODE].publicPath)
 
   return {
     entry: './src/index.js',
@@ -54,7 +56,8 @@ module.exports = (wpEnv) => {
         new DefinePlugin({
           'process.env': JSON.stringify({
             ...dotenv.config().parsed,
-            ...env
+            ...env,
+            PUBLIC_PATH: modeVars[env.MODE].publicPath
           })
         })
     ]
