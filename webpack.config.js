@@ -14,10 +14,12 @@ module.exports = (wpEnv) => {
 
   const modeVars = {
     local: {
-      filename: 'index_bundle.js'
+      filename: 'index_bundle.js',
+      publicPath: '/'
     },
     dev: {
-      filename: 'index_bundle.js'
+      filename: 'index_bundle.js',
+      publicPath: '/'
     },
     live: {
       filename: 'index_bundle.js',
