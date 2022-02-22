@@ -23,7 +23,7 @@ module.exports = (wpEnv) => {
     },
     live: {
       filename: 'index_bundle.js',
-      publicPath: env.LIVE_PUBLIC_PATH
+      publicPath: `/${env.BS_CONFIG.BS_FOLDER}/${env.BS_CONFIG.BS_URL}`
     }
   }
 

@@ -1,3 +1,11 @@
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
 div {
   background-color: red;
   > a {
