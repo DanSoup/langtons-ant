@@ -4,11 +4,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-}
 
-div {
-  background-color: red;
-  > a {
-    background-color: green;
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+    font-weight: 900;
+    font-size: 20px;
+
+    a {
+      padding: 5px 10px;
+    }
+
+    a:visited {
+      color: #202020;
+    }
+
+    a:hover {
+      color: #ffffff;
+      background: #000000;
+    }
   }
 }
